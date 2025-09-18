@@ -1,0 +1,320 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    /* outline: solid red 1px; */
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+    /* background-color: aquamarine; */
+
+}
+
+.logoHeaderimg {
+    margin-right: 93px;
+    width: 145px;
+}
+
+
+.ulNav {
+    gap: 50px;
+    margin-right: 344px;
+}
+
+.ulContacts {
+    gap: 50px;
+}
+
+.liNav {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    cursor: pointer;
+    color: #212121;
+}
+
+.liNav:hover {
+    color: #2196F3;
+}
+
+.links {
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    cursor: pointer;
+}
+
+.links:hover {
+    color: #2196F3;
+}
+
+.backOfSolutions {
+    position: relative;
+    background-color: #2F303A;
+    height: 600px;
+}
+
+.forRelativemain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 44px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.takeOrder {
+    color: #fff;
+    background-color: #2196F3;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    width: 216px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.captcher {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+    margin: 0;
+}
+
+.benefitsList {
+    /* margin-top: 94px; */
+    gap: 30px;
+    margin: 94px auto;
+}
+
+.description {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+    color: #757575;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.ourJob {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.pictures {
+    width: 370px;
+}
+
+.hotoList {
+    gap: 30px;
+    margin-bottom: 94px;
+}
+
+.sectionTeam {
+    background-color: #F5F4FA;
+}
+
+.ourTeanCapcher {
+    color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 36px;
+    margin-bottom: 50px;
+    padding-top: 94px;
+    text-align: center;
+}
+
+.persons {
+    width: 270px;
+}
+
+.employeeInfo {
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+.personInfo {
+    background-color: #fff;
+    height: 368px;
+    text-align: center;
+}
+
+.name {
+    /* text-align: center; */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 16px;
+    color: #212121;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.position {
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.logoFooterImg {
+    margin-top: 60px;
+    width: 145px;
+}
+
+.secFoot {
+    background-color: #2F303A;
+    height: 252px;
+}
+
+.listInfoFooter {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.linksfooter {
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.linksfooterFirst {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    cursor: pointer;
+}
+
+.linksfooter:hover {
+    color: #2196F3;
+    opacity: 1;
+}
+
+.linksfooterFirst:hover {
+    color: #2196F3;
+    opacity: 1;
+}
+
+/* regular */
+
+/* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+/* medium */
+
+/*   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+/* bold */
+
+/* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+
+/* black */
+/* 
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+     */
