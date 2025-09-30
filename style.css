@@ -296,6 +296,26 @@ h1 {
     opacity: 1;
 }
 
+
+/* .liWithSvgs {
+    text-align: center;
+} */
+
+.benefitsSvgs {
+    width: 270px;
+    height: 120px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.cvgPaths {
+    /* text-align: center; */
+    width: 7px;
+}
 /* regular */
 
 /* font-family: "Roboto", sans-serif;
