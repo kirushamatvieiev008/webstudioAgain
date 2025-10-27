@@ -334,6 +334,7 @@ h1 {
     /* text-align: center; */
     width: 7px;
 }
+
 /* regular */
 
 /* font-family: "Roboto", sans-serif;
@@ -490,6 +491,45 @@ h1 {
     /* padding-bottom: 300px; */
     /* padding-bottom: 20px; */
 }
+
+.regularClientsCaptcher {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    color: #212121;
+}
+
+.svgsClients {
+    width: 170px;
+    height: 92px;
+    outline: solid 1px #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-right: 20px; */
+    /* position: relative; */
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.svgsClients path {
+    fill: #2196F3;
+}
+
+.regularClUl {
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+
 
 /* regular */
 
