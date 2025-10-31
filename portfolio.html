@@ -40,15 +40,33 @@
         />
         <nav>
           <ul class="ulNav">
-            <li class="liNav"><a class="liNav" href="studio.html">Студія</a></li>
-            <li class="liNav"><a class="liNav liNavSelected" href="portfolio.html">Портфоліо</a></li>
+            <li class="liNav">
+              <a class="liNav liNavSelected" href="studio.html">Студія</a>
+            </li>
+            <li class="liNav">
+              <a class="liNav" href="portfolio.html">Портфоліо</a>
+            </li>
             <li class="liNav"><a class="liNav" href="">Контакти</a></li>
           </ul>
         </nav>
         <aside>
           <ul class="ulContacts">
-            <li><a class="links" href="">info@devstudio.com</a></li>
-            <li><a class="links" href="">+38 096 111 11 11</a></li>
+            <li>
+              <a class="links" href="mailto:info@devstudio.com">
+                <svg class="svgsHeader mailHeader">
+                  <use href="photos/studio/photosHeader/svgs/mail.svg"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="links" href="tel:+380961111111">
+                <svg class="svgsHeader telHeader">
+                  <use href="photos/studio/photosHeader/svgs/phone.svg"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
         </aside>
       </header>
@@ -65,47 +83,83 @@
           </ul>
           <ul class="picturesProjects">
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/cpwork.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/cpwork.png"
+                alt="#"
+              />
               <p class="projectsP">Технокряк</p>
               <span class="types">Веб-сайт</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/basketball.png" alt="" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/basketball.png"
+                alt=""
+              />
               <p class="projectsP">Постер New Orlean vs Golden Star</p>
               <span class="types">Дизайн</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/seafood.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/seafood.png"
+                alt="#"
+              />
               <p class="projectsP">Ресторан Seafood</p>
               <span class="types">Додаток</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/headphones.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/headphones.png"
+                alt="#"
+              />
               <p class="projectsP">Проєкт Prime</p>
               <span class="types">Маркетинг</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/boxes.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/boxes.png"
+                alt="#"
+              />
               <p class="projectsP">Проєкт Boxes</p>
               <span class="types">Додаток</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/planetoncp.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/planetoncp.png"
+                alt="#"
+              />
               <p class="projectsP">Inspiration has no Borders</p>
               <span class="types">Веб-сайт</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/book.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/book.png"
+                alt="#"
+              />
               <p class="projectsP">Видання Limited Edition</p>
               <span class="types">Дизайн</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/ticket.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/ticket.png"
+                alt="#"
+              />
               <p class="projectsP">Проєкт LAB</p>
               <span class="types">Маркетинг</span>
             </li>
             <li class="liPictureProjects">
-              <img class="pictureProjectsImg" src="photos/portfolio/cpwork.png" alt="#" />
+              <img
+                class="pictureProjectsImg"
+                src="photos/portfolio/cpwork.png"
+                alt="#"
+              />
               <p class="projectsP">Growing Business</p>
               <span class="types">Додаток</span>
             </li>
@@ -116,22 +170,63 @@
     <footer>
       <section class="secFoot">
         <div class="container">
-          <article>
-            <img
-              class="logoFooterImg"
-              src="photos/studio/photosFooter/logoFooter.png"
-              alt="logo"
-            />
-            <ul class="listInfoFooter">
-              <li>
-                <a class="linksfooterFirst" href=""
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li><a class="linksfooter" href="">info@devstudio.com</a></li>
-              <li><a class="linksfooter" href="">+38 096 111 11 11</a></li>
-            </ul>
-          </article>
+          <div class="flexFoot">
+            <div>
+              <img
+                class="logoFooterImg"
+                src="photos/studio/photosFooter/logoFooter.png"
+                alt="logo"
+              />
+              <ul class="listInfoFooter">
+                <li>
+                  <a class="linksfooterFirst" href=""
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li><a class="linksfooter" href="">info@devstudio.com</a></li>
+                <li><a class="linksfooter" href="">+38 096 111 11 11</a></li>
+              </ul>
+            </div>
+            <div class="sec2Foot">
+              <h6 class="subscribe">приєднуйтесь</h6>
+              <ul class="ulsvgsContactsFoot">
+                <li>
+                  <a href="#" target="_blank">
+                    <svg class="svgsContactsFoot">
+                      <use
+                        href="photos/studio/portfolioLink/instaLink.svg"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg class="svgsContactsFoot">
+                      <use
+                        href="photos/studio/portfolioLink/twitterLink.svg"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg class="svgsContactsFoot">
+                      <use
+                        href="photos/studio/portfolioLink/FacebookLink.svg"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <svg class="svgsContactsFoot">
+                      <use href="photos/studio/portfolioLink/inLink.svg"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </footer>
