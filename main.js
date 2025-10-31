@@ -1,0 +1,1 @@
+const modalBlur = document.querySelector('.blur');

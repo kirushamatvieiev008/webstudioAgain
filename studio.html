@@ -33,6 +33,28 @@
   <body>
     <div class="container">
       <header class="head">
+        <div class="blur">
+        </div>
+        <div class="modalWindow">
+          <button>
+            <svg class="svgModal">
+              <use href="./photos/modal/close.svg" x="6" y="6"></use>
+            </svg>
+          </button>
+          <p>Залиште свої дані, ми вам передзвонимо</p>
+          <form action="submit">
+            <input type="text" />
+            <input type="number" />
+            <input type="email" />
+            <textarea></textarea>
+            <label for="checkboxInp"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></label
+            >
+            <input id="checkboxInp" type="checkbox" />
+            <button></button>
+          </form>
+        </div>
         <img
           class="logoHeaderimg"
           src="photos/studio/photosHeader/logoheader.png"
@@ -523,7 +545,6 @@
         </div>
       </section>
     </footer>
-
     <script src="./main.js"></script>
   </body>
 </html>
