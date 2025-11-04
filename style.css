@@ -758,9 +758,9 @@ h1 {
     top: 8px;
 }
 
-.closeBtn:hover .svgModal {
+/* .closeBtn:hover .svgModal {
     color: #2196F3;
-}
+} */
 
 .dropInfo {
     color: #212121;
@@ -800,7 +800,150 @@ label {
     width: 448px;
     margin-top: 4px;
     border: none;
+    margin-bottom: 10px;
 }
+
+.stayInfo {
+    color: #212121;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin-top: 53px;
+    text-align: center;
+}
+
+.closeModal {
+    background-color: #96484800;
+    border: none;
+    border-radius: 50%;
+    outline: solid rgba(0, 0, 0, 0.1) 1px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    right: 6px;
+}
+
+.closeModal:hover .svgModal {
+    color: #2196F3;
+}
+
+.inpsModal {
+    width: 448px;
+    height: 40px;
+    outline: solid 1px #21212134;
+    border-radius: 4px;
+}
+
+.formModal {
+    text-align: left;
+    width: 448px;
+    margin-top: 12px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.labelsModal {
+    color: #757575;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.stayComment {
+    /* min-height: 100px; */
+    width: 430px;
+    height: 106px;
+    /* height: fit-content; */
+    /* overflow: scroll; */
+    border-radius: 4px;
+    outline: solid 1px #21212134;
+    border: none;
+    resize: none;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.stayComment::placeholder {
+    color: #757575;
+    opacity: .5;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.newCheckbox {
+    width: 15px;
+    height: 15px;
+    outline: solid 2px #212121;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.checkLabel {
+    margin: 0;
+}
+
+.flexModal {
+    display: flex;
+    align-items: center;
+    width: 425px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.checkboxModal {
+    margin: 0;
+    margin-right: 8.5px;
+    /* margin-top: ; */
+    /* margin-left: 52px; */
+}
+
+.conditions {
+    color: #2196F3;
+    text-decoration: underline solid;
+}
+
+.submitBtn {
+    width: 200px;
+    height: 50px;
+    /* margin: 0 auto; */
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, .15);
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+/*  */
+
+/*  */
 
 /* .justDiv {
     width: 200px;

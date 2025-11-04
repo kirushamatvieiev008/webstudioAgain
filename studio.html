@@ -33,26 +33,37 @@
   <body>
     <div class="container">
       <header class="head">
-        <div class="blur">
-        </div>
+        <div class="blur"></div>
         <div class="modalWindow">
-          <button>
+          <button class="closeModal">
             <svg class="svgModal">
               <use href="./photos/modal/close.svg" x="6" y="6"></use>
             </svg>
           </button>
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-          <form action="submit">
-            <input type="text" />
-            <input type="number" />
-            <input type="email" />
-            <textarea></textarea>
-            <label for="checkboxInp"
-              >Погоджуюся з розсилкою та приймаю
-              <a href="#">Умови договору</a></label
-            >
-            <input id="checkboxInp" type="checkbox" />
-            <button></button>
+          <p class="stayInfo">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="formModal" action="submit">
+            <label class="labelsModal nameLabel" for="name">Ім'я</label><br />
+            <input class="inpsModal" id="name" type="text" /><br />
+            <label class="labelsModal" for="phoneNumber">Телефон</label><br />
+            <input class="inpsModal" id="phoneNumber" type="number" /><br />
+            <label class="labelsModal" for="emailInp">Пошта</label><br />
+            <input class="inpsModal" id="emailInp" type="email" /><br />
+            <label class="labelsModal" for="comment">Коментар</label><br />
+            <textarea
+              class="stayComment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+            <!-- <input type=""> -->
+            <div class="flexModal">
+              <input class="checkboxModal" id="checkboxInp" type="checkbox" />
+              <label class="checkLabel" for="checkboxInp"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="conditions" href="#">Умови договору</a></label
+              >
+            </div>
+            <!-- <div class="newCheckbox"></div> -->
+            <button class="submitBtn" type="submit">Відправити</button>
           </form>
         </div>
         <img
