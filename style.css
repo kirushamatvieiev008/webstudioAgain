@@ -4,7 +4,7 @@ a {
 
 body {
     margin: 0;
-    overflow: hidden;
+    overflow: none;
 }
 
 ul {
@@ -12,6 +12,25 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.contactsBtn {
+    color: #212121;
+    border: none;
+    background-color: #00000000;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contactsBtn:hover {
+    color: #2196F3;
 }
 
 p {
@@ -683,7 +702,7 @@ h1 {
 }
 
 .blur {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -697,6 +716,7 @@ h1 {
 }
 
 .modalWindow {
+    display: none;
     width: 528px;
     height: 581px;
     position: absolute;
@@ -736,6 +756,10 @@ h1 {
     width: 30px;
     height: 30px;
     color: black;
+}
+
+.svgModal:hover {
+    color: #2196F3;
 }
 
 .modalMain {
@@ -797,11 +821,17 @@ label {
 
 .inpsModal {
     height: 40px;
-    width: 448px;
+    width: 402px;
     margin-top: 4px;
     border: none;
     margin-bottom: 10px;
+    padding-left: 42px;
+    outline: solid 1px #21212134;
 }
+
+/* .inpsModal:focus .svgName {
+    color: #2196F3;
+} */
 
 .stayInfo {
     color: #212121;
@@ -830,16 +860,16 @@ label {
     right: 6px;
 }
 
-.closeModal:hover .svgModal {
+.closeModal:hover {
     color: #2196F3;
 }
 
-.inpsModal {
+/* .inpsModal {
     width: 448px;
     height: 40px;
     outline: solid 1px #21212134;
     border-radius: 4px;
-}
+} */
 
 .formModal {
     text-align: left;
@@ -847,6 +877,7 @@ label {
     margin-top: 12px;
     margin: 0 auto;
     gap: 10px;
+    position: relative;
 }
 
 .labelsModal {
@@ -940,6 +971,109 @@ label {
     cursor: pointer;
     /* text-align: center; */
 }
+
+.svgsModal {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #212121;
+}
+
+.svgsModal:hover {
+    color: #2196F3;
+}
+
+.svgName {
+    top: 34px;
+    left: 12px;
+
+}
+
+.svgPhone {
+    top: 108.5px;
+    left: 12px;
+}
+
+.svgEmail {
+    top: 182.5px;
+    left: 12px;
+    color: #212121;
+}
+
+.notificationSubscribe {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sec3Foot {
+    margin-left: 93px;
+    margin-top: 67px;
+}
+
+.emailFootInp {
+
+    background-color: #00000000;
+    outline: solid #ffffff52 1px;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    width: 342px;
+    padding-left: 16px;
+    color: #fff;
+}
+
+.emailFootInp::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff9a;
+
+}
+
+.formFoot {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.subscrineFoot {
+    border: none;
+    background-color: #2196F3;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    letter-spacing: 6%;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.svgFootSubmit {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+/* .svgName use {
+    x: 0;
+    y: 0;
+} */
 
 /*  */
 

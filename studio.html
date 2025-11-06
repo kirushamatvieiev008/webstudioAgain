@@ -43,11 +43,24 @@
           <p class="stayInfo">Залиште свої дані, ми вам передзвонимо</p>
           <form class="formModal" action="submit">
             <label class="labelsModal nameLabel" for="name">Ім'я</label><br />
-            <input class="inpsModal" id="name" type="text" /><br />
+            <input class="inpsModal forjs1" id="name" type="text" /><br />
+            <svg class="svgsModal svgName">
+              <use href="photos/modal/name.svg"></use>
+            </svg>
             <label class="labelsModal" for="phoneNumber">Телефон</label><br />
-            <input class="inpsModal" id="phoneNumber" type="number" /><br />
+            <input
+              class="inpsModal forjs2"
+              id="phoneNumber"
+              type="number"
+            /><br />
+            <svg class="svgsModal svgPhone">
+              <use href="photos/modal/phone.svg"></use>
+            </svg>
             <label class="labelsModal" for="emailInp">Пошта</label><br />
-            <input class="inpsModal" id="emailInp" type="email" /><br />
+            <input class="inpsModal forjs3" id="emailInp" type="email" /><br />
+            <svg class="svgsModal svgEmail">
+              <use href="photos/modal/email.svg"></use>
+            </svg>
             <label class="labelsModal" for="comment">Коментар</label><br />
             <textarea
               class="stayComment"
@@ -79,7 +92,7 @@
             <li class="liNav">
               <a class="liNav" href="portfolio.html">Портфоліо</a>
             </li>
-            <li class="liNav"><a class="liNav" href="">Контакти</a></li>
+            <li class="liNav"><button class="contactsBtn">Контакти</button></li>
           </ul>
         </nav>
         <aside>
@@ -551,6 +564,20 @@
                   </a>
                 </li>
               </ul>
+            </div>
+            <div class="sec3Foot">
+              <p class="notificationSubscribe">Підпишіться на розсилку</p>
+              <form class="formFoot" action="">
+                <input class="emailFootInp" placeholder="E-mail" type="email" />
+                <button class="subscrineFoot" type="submit">
+                  Підписатися
+                  <svg class="svgFootSubmit">
+                    <use
+                      href="./photos/studio/photosFooter/submitPlane.svg"
+                    ></use>
+                  </svg>
+                </button>
+              </form>
             </div>
           </div>
         </div>
