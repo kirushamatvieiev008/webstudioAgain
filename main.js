@@ -9,6 +9,8 @@ const closeModalBtn = document.querySelector('.svgModal');
 const blurBlock = document.querySelector('.blur');
 const modalWindow = document.querySelector('.modalWindow');
 const openModal = document.querySelector('.contactsBtn');
+const formModal = document.querySelector('.formModal');
+const checkboxModal = document.querySelector('.checkboxModal');
 
 openModal.addEventListener('click', event => {
     blurBlock.style.display = 'block';
@@ -54,4 +56,15 @@ closeModalBtn.addEventListener('click', event => {
 })
 
 
-modalWindow
+formModal.addEventListener('submit', event => {
+  event.preventDefault();
+  console.log(checkboxModal.value);
+  
+  if (checkboxModal.value)
+  
+
+  // if ()
+  modalWindow.style.display = 'none';
+  blurBlock.style.display = 'none';
+  document.body.style.overflow = 'visible';
+})
