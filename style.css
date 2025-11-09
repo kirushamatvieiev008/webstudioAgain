@@ -499,11 +499,18 @@ h1 {
     outline: #EEEEEE solid 1px;
     text-align: left;
     height: 404px;
+    position: relative;
 }
 
 .liPictureProjects:hover {
     box-shadow: rgba(0, 0, 0, 0.219) 2px 3px 5px;
     cursor: pointer;
+}
+
+.liPictureProjects:hover .liPictureProjects::before {
+    animation-name: animationPortfolioHover;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
 
 .projectsP {
