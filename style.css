@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     overflow: none;
@@ -191,6 +195,7 @@ h1 {
     border-radius: 4px;
     font-size: 16px;
     text-align: center;
+    cursor: pointer;
 }
 
 .captcher {
@@ -738,7 +743,7 @@ h1 {
 .modalWindow {
     display: none;
     width: 528px;
-    height: 581px;
+    height: fit-content;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -750,6 +755,7 @@ h1 {
     box-shadow: 0 1px 1px rgb(0, 0, 0, .14);
     box-shadow: 0 2px 1px rgb(0, 0, 0, .2);
     z-index: 11;
+    padding-bottom: 20px;
 }
 
 .shadow2 {
@@ -948,6 +954,33 @@ label {
 
 .checkLabel {
     margin: 0;
+    text-align: center;
+}
+
+.notificationbeware {
+    display: none;
+    color: red;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.lastCheck {
+    display: none;
+    color: red;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-top: 5px;
+    text-align: center;
 }
 
 .flexModal {
@@ -1003,6 +1036,7 @@ label {
 .conditions {
     color: #2196F3;
     text-decoration: underline solid;
+    /* text-align: center; */
 }
 
 .submitBtn {
@@ -1025,6 +1059,20 @@ label {
     box-shadow: 0 4px 4px rgb(0, 0, 0, .15);
     cursor: pointer;
     /* text-align: center; */
+}
+
+.notification {
+    font-size: 12px;
+    color: red;
+    /* padding-left: 0px; */
+    /* margin-left: px; */
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .svgsModal {
