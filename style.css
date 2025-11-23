@@ -3,7 +3,7 @@ a {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -512,10 +512,59 @@ h1 {
     cursor: pointer;
 }
 
-.liPictureProjects:hover .liPictureProjects::before {
-    animation-name: animationPortfolioHover;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
+
+.liPictureProjects::before {
+    position: absolute;
+    top: 294px;
+    left: 0;
+    content: 'Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію \A чи приватну особу.';
+    width: 322px;
+    font-size: 18px;
+    height: 0;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: rgba(255, 0, 0, 0.685);
+    /* text-align: center; */
+    /* padding-top: 63px; */
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 28px;
+    /* letter-spacing: 3%; */
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+.liPictureProjects:hover::before {
+    animation-name: hoverAnim;
+    animation-timing-function: ease;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-direction: initial ;
+}
+
+
+
+@keyframes hoverAnim {
+    0% {
+        padding-top: 0;
+        top: 294px;
+        height: 0;
+        overflow: hidden;
+        /* background-color: #2196F3; */
+    }
+
+    100% {
+        padding-top: 63px;
+        top: 0;
+        height: 231px;
+        animation-play-state: paused;
+        /* background-color: #2196F3; */
+    }
 }
 
 .projectsP {
@@ -1173,6 +1222,7 @@ label {
     margin-left: 10px;
 }
 
+
 /* .svgName use {
     x: 0;
     y: 0;
@@ -1223,3 +1273,29 @@ label {
   font-style: normal;
   font-variation-settings: "wdth" 100;
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media  */

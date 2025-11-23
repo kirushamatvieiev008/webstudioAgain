@@ -15,6 +15,7 @@ const flexModal = document.querySelector(".flexModal");
 const stayComment = document.querySelector(".stayComment");
 const notificationbeware = document.querySelector(".notificationbeware");
 const lastCheck = document.querySelector(".lastCheck");
+const picturesProjectsUl = document.querySelector('.picturesProjects');
 
 console.log(inpsModal);
 
@@ -104,5 +105,12 @@ formModal.addEventListener("submit", (event) => {
     stayComment.value = "";
     lastCheck.style.display = "none";
     checkboxModal.checked = false;
+  }
+});
+
+
+picturesProjectsUl.addEventListener('click', event => {
+  if (event.target.classList.contains('liPictureProjects1')) {
+    
   }
 });
