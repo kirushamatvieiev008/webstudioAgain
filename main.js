@@ -114,3 +114,13 @@ picturesProjectsUl.addEventListener('click', event => {
     
   }
 });
+
+const optionsView = document.querySelectorAll('.optionsView');
+
+optionsView.forEach(btn => {
+  btn.addEventListener('click', event => {
+    event.preventDefault();
+
+    
+  })
+})

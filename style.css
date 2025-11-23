@@ -18,6 +18,26 @@ ul {
     padding: 0;
 }
 
+@keyframes colorChangeMenu {
+    0% {
+        color: #212121;
+    }
+
+    100% {
+        color: #2196F3;
+    }
+}
+
+@keyframes colorChangeMenusecond {
+    0% {
+        color: #757575;
+    }
+
+    100% {
+        color: #2196F3;
+    }
+}
+
 .contactsBtn {
     color: #212121;
     border: none;
@@ -35,6 +55,10 @@ ul {
 
 .contactsBtn:hover {
     color: #2196F3;
+    animation-name: colorChangeMenu;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
 }
 
 p {
@@ -112,6 +136,10 @@ p {
 
 .liNav:hover {
     color: #2196F3;
+    animation-name: colorChangeMenu;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
 }
 
 .links {
@@ -132,11 +160,18 @@ p {
 }
 
 .links:hover .svgsHeader {
-    color: #2196F3;
+    animation-name: colorChangeMenusecond;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
 }
 
 .links:hover {
-    color: #2196F3;
+    animation-name: colorChangeMenusecond;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    /* color: #2196F3; */
 }
 
 .backOfSolutions {
@@ -285,6 +320,28 @@ h1 {
     outline: 0px solid rgba(0, 0, 0, 0.158);
 }
 
+.personInfo:hover {
+    /* box-shadow: 1px 1px 5px rgb(73, 73, 73); */
+    animation-name: boxFocus;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .1s;
+}
+
+@keyframes boxFocus {
+    0% {
+        box-shadow: rgba(0, 0, 0, 0.336) 0 2px 2px;
+    }
+
+    100% {
+        box-shadow: 1px 1px 5px rgb(73, 73, 73);
+    }
+}
+
+/* .socLinks:hover {
+
+} */
+
 .name {
     /* text-align: center; */
     font-family: "Roboto", sans-serif;
@@ -324,6 +381,24 @@ h1 {
     margin-top: 20px;
     flex-direction: column;
     gap: 9px;
+}
+
+.sameHover:hover {
+    animation-name: footerInfo;
+    animation-duration: .1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footerInfo {
+    0% {
+        color: #fff;
+
+    }
+
+    100% {
+        color: #2196F3;
+    }
 }
 
 .linksfooter {
@@ -448,7 +523,7 @@ h1 {
 
 .optionsView {
     height: 38px;
-    color: #F5F4FA;
+    /* color: #F5F4FA; */
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -459,6 +534,7 @@ h1 {
     border: none;
     border-radius: 4px;
     padding: 6px 25px;
+    background-color: #F5F4FA;
     /* box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253); */
 }
 
@@ -466,23 +542,26 @@ h1 {
     background-color: #2196F3;
     color: #fff;
     box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253);
+    animation-name: buttonTopics;
+    animation-timing-function: ease-in;
+    animation-duration: .1s;
+
 }
 
-.optionViewSelected {
-    height: 38px;
-    color: #fff;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    background-color: #2196F3;
-    border: none;
-    border-radius: 4px;
-    padding: 6px 25px;
-    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253);
+@keyframes buttonTopics {
+    0% {
+        color: #F5F4FA;
+        box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0);
+        background-color: #F5F4FA;
+    }
+
+    100% {
+        background-color: #2196F3;
+        color: #fff;
+        box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253);
+    }
 }
+
 
 .sort:has(.optionsView:hover) .optionViewSelected {
     background-color: #F5F4FA;
@@ -527,7 +606,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    background-color: rgba(255, 0, 0, 0.685);
+    background-color: #2195f3d5;
     /* text-align: center; */
     /* padding-top: 63px; */
     padding-left: 24px;
@@ -544,7 +623,7 @@ h1 {
     animation-duration: .4s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-direction: initial ;
+    animation-direction: initial;
 }
 
 
@@ -557,7 +636,7 @@ h1 {
         overflow: hidden;
         /* background-color: #2196F3; */
     }
-
+    
     100% {
         padding-top: 63px;
         top: 0;
@@ -636,8 +715,22 @@ h1 {
     color: #AFB1B8;
 }
 
+
+@keyframes regularClients {
+    0% {
+        color: #AFB1B8;
+    }
+
+    100% {
+        color: #2196F3;
+    }
+}
+
 .svgsClients:hover {
-    color: #2196F3;
+    animation-name: regularClients;
+    animation-duration: .1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 
 .svgsHeader {
@@ -714,8 +807,24 @@ h1 {
 }
 
 .svgsContacts:hover {
-    background-color: #2196F3;
-    color: #fff;
+    /* background-color: #2196F3;
+    color: #fff; */
+    animation-name: socialHover;
+    animation-duration: .1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes socialHover {
+    0% {
+        color: #AFB1B8;
+        border-radius: 50%;
+    }
+
+    100% {
+        background-color: #2196F3;
+        color: #fff;
+    }
 }
 
 .svgsContacts use {
@@ -773,6 +882,21 @@ h1 {
     background-color: #2196F3;
     opacity: 1;
     color: #fff;
+    animation-name: footSocChange;
+    animation-timing-function: ease-in;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footSocChange {
+    0% {
+        background-color: #ffffff2a;
+    }
+
+    100% {
+        background-color: #2196F3;
+        /* color: #fff; */
+    }
 }
 
 .blur {
@@ -1216,10 +1340,50 @@ label {
     cursor: pointer;
 }
 
+.subscrineFoot:hover {
+    animation-name: btnFoot;
+    animation-duration: .1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btnFoot {
+    0% {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
+    }
+}
+
 .svgFootSubmit {
     width: 24px;
     height: 24px;
     margin-left: 10px;
+}
+
+.optionViewSelected {
+    /* height: 38px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 25px;
+    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253); */
+    background-color: #2196F3;
+    color: white;
+}
+
+.optionViewSelected:hover {
+    color: white;
+    background-color: #2196F3;
 }
 
 
