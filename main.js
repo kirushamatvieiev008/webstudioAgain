@@ -19,7 +19,7 @@ const picturesProjectsUl = document.querySelector('.picturesProjects');
 
 console.log(inpsModal);
 
-openModal.addEventListener("click", (event) => {
+openModal.addEventListener("click", event => {
   blurBlock.style.display = "block";
   modalWindow.style.display = "block";
   document.body.style.overflow = "hidden";
@@ -109,18 +109,18 @@ formModal.addEventListener("submit", (event) => {
 });
 
 
-picturesProjectsUl.addEventListener('click', event => {
-  if (event.target.classList.contains('liPictureProjects1')) {
+// picturesProjectsUl.addEventListener('click', event => {
+//   if (event.target.classList.contains('liPictureProjects1')) {
     
-  }
-});
+//   }
+// });
 
-const optionsView = document.querySelectorAll('.optionsView');
+// const optionsView = document.querySelectorAll('.optionsView');
 
-optionsView.forEach(btn => {
-  btn.addEventListener('click', event => {
-    event.preventDefault();
+// optionsView.forEach(btn => {
+//   btn.addEventListener('click', event => {
+//     event.preventDefault();
 
     
-  })
-})
+//   })
+// })
