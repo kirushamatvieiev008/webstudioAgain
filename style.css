@@ -799,6 +799,7 @@ h1 {
     justify-content: center;
     align-items: center;
     letter-spacing: 3%;
+    max-width: 370px;
 }
 
 .descriptionText {
@@ -882,6 +883,7 @@ h1 {
 
 .flexFoot {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ulsvgsContactsFoot {
@@ -1510,8 +1512,36 @@ label {
         background-image: url(teamProject_2x.png);
         height: 400px;
         background-size: cover;
+        /* background-size: 100% 100%; */
     }
 
+    .employeeInfo {
+        width: 585px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hotoList {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .regularClUl {
+        width: 570px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .head {
+        width: 1071px;
+    }
+
+    .container {
+        width: 1071px;
+    }
     /*     gap: 30px;
     width: 700px;
     justify-content: space-between;
