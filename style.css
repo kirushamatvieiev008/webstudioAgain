@@ -1405,6 +1405,16 @@ label {
     margin-left: 10px;
 }
 
+.burgerBtn {
+    display: none;
+}
+
+/* .cvgPaths {
+    x: 50%;
+    y: 50%;
+    transform: translate(-32.2px, -35px);
+} */
+
 .optionViewSelected {
     /* height: 38px;
     color: #fff;
@@ -1509,9 +1519,19 @@ label {
         margin-right: 200px;
     }
 
+    .benefitsSvgs {
+        width: 354px;
+    }
+
+    .cvgPaths {
+        x: 50%;
+        y: 50%;
+        transform: translate(-32.2px, -35px);
+    }
+
     .benefitsList {
         gap: 30px;
-        /* width: 700px; */
+        width: 800px;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 94px auto;
@@ -1576,31 +1596,31 @@ label {
     }
 
     .formFoot {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.flexFoot  {
-    justify-content: space-between;
-}
+    .flexFoot {
+        justify-content: space-between;
+    }
 
-.sec3Foot {
-    width: 100%;
-    text-align: center;
-}
+    .sec3Foot {
+        width: 100%;
+        text-align: center;
+    }
 
-.picturesProjects {
-    justify-content: center;
-    /* text-align: left; */
-}
+    .picturesProjects {
+        justify-content: center;
+        /* text-align: left; */
+    }
 
-.liPictureProjects9 {
-    transform: translateX(-54%);
-}
+    .liPictureProjects9 {
+        transform: translateX(-54%);
+    }
 
 
 
@@ -1616,6 +1636,7 @@ label {
     .logoHeaderimg {
         margin: 0;
     }
+
     .container {
         width: 600px;
         padding-inline: 20px;
@@ -1629,4 +1650,385 @@ label {
         padding-inline: 40px;
     }
 
+    .liPictureProjects9 {
+        transform: translateX(0);
+    }
+
+    .benefitsList {
+        gap: 30px;
+        width: 600px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 94px auto;
+    }
+
+    .benefitsSvgs {
+        width: 270px;
+    }
+
 }
+
+/* @media (max-width: 710px) {
+
+
+} */
+
+.closeBurger {
+    width: 18px;
+    height: 18px;
+}
+
+.closeBurgerBtn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #00000000;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.burgerMenu {
+    /* width: 100%;
+    height: 100vh; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    /* margin-left: 50%;
+    margin-top: 24%; */
+    /* transform: translate(-50%, -50%); */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-left: 40px;
+    padding-top: 48px;
+}
+
+.linksPage {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #212121;
+}
+
+.linksPage:hover {
+    animation-name: colorChangeMenu;
+    animation-duration: .2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.contactsBurgerUl {
+    position: absolute;
+    bottom: 134px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.phoneNumberBurger {
+    font-size: 34px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #757575;
+}
+
+.phoneNumberBurger:hover {
+    animation-name: colorChangeMenusecond;
+    animation-timing-function: ease-in;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+}
+
+.mailBurger {
+    color: #757575;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.mailBurger:hover {
+    animation-name: colorChangeMenusecond;
+    animation-timing-function: ease-in;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+}
+
+.linksSocmediaBurger {
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    display: flex;
+    gap: 20px;
+}
+
+.linksMediaBurger {
+    color: #2196F3;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.linksMediaBurger1::after {
+    content: '';
+    width: 1px;
+    background-color: #212121;
+    opacity: .2;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 93px;
+}
+
+.linksMediaBurger2::after {
+    content: '';
+    width: 1px;
+    background-color: #212121;
+    opacity: .2;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 168px;
+}
+
+.linksMediaBurger3::after {
+    content: '';
+    width: 1px;
+    background-color: #212121;
+    opacity: .2;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 267px;
+}
+
+.linksMediaBurger:hover {
+    animation-name: reverseAnim;
+    animation-timing-function: ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.closeBurgerBtn:hover {
+    animation-name: closeHover;
+    animation-timing-function: ease-in;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes closeHover {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: #2196F3;
+    }
+}
+
+@keyframes reverseAnim {
+    0% {
+        color: #2196F3;
+    }
+
+    100% {
+        color: #212121;
+    }
+}
+
+
+
+@media (max-width: 710px) {
+    .burgerBtn {
+        padding: 0;
+        display: block;
+        background-color: rgba(255, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+
+    .svgBurger {
+        width: 24px;
+        height: 16px;
+    }
+
+    .connect {
+        display: none;
+    }
+
+    .navig {
+        display: none;
+    }
+
+    .benefitsList {
+        width: 450px;
+    }
+
+    .liWithSvgs {
+        width: 100%;
+    }
+
+    .benefitsSvgs {
+        width: 100%;
+    }
+
+    .cvgPaths {
+        x: 50%;
+        y: 50%;
+        transform: translate(-32.2px, -35px);
+    }
+
+    .employeeInfo {
+        width: 270px;
+    }
+
+    .regularClUl  {
+        width: 370px;
+    }
+
+    .flexFoot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe {
+        text-align: center;
+    }
+
+    .logoFooterImg {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .listInfoFooter li {
+        text-align: center;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .HeaderContainer {
+        width: 450px;
+        /* justify-content: space-between; */
+    }
+
+    .backOfSolutions {
+        background-image: url(photos/studio/effectiveBackground/teamProjectMobile.png);
+    }
+
+    .sec3Foot {
+        margin-left: 0;
+    }
+
+    .sec2Foot {
+        margin-left: 0;
+    }
+
+    h1 {
+        width: 350px;
+        font-size: 26px;
+    }
+
+    .head {
+        justify-content: space-between;
+    }
+    .sort {
+        margin-top: 40px;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .optionsView  {
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 330px;
+    }
+    h1 {
+        width: 230px;
+        font-size: 18px;
+    }
+
+    .benefitsList {
+        width: 330px;
+    }
+
+    .HeaderContainer {
+        width: 300px;
+    }
+    .regularClUl {
+        width: 200px;
+    }
+
+    .hotoList {
+        display: none;
+    }
+}
+
+/* regular */
+
+/* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100; */
+
+/* medium */
+
+/*   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+/* bold */
+
+/* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100; */
+
+
+/* black */
+/* 
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+     */

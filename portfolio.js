@@ -45,3 +45,27 @@ sortUl.addEventListener("click", (event) => {
         buttonBlue(4);
   }
 });
+
+
+const closeBurgerBtn = document.querySelector('.closeBurgerBtn');
+const burgerBtnOpen = document.querySelector('.burgerBtn');
+const burgerMenu = document.querySelector('.burgerMenu');
+const contactsBurger = document.querySelector('.contactsBurger');
+const portfolioBurger = document.querySelector('.portfolioBurger');
+
+
+burgerBtnOpen.addEventListener('click', event => {
+  burgerMenu.style.display = 'block';
+});
+
+closeBurgerBtn.addEventListener('click', event => {
+    burgerMenu.style.display = 'none';
+});
+
+contactsBurger.addEventListener('click', event => {
+      burgerMenu.style.display = 'none';
+});
+
+portfolioBurger.addEventListener('click', event => {
+  burgerBtnOpen.style.display = 'block';
+});

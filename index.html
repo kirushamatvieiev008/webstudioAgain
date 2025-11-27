@@ -87,7 +87,7 @@
           src="photos/studio/photosHeader/logoheader.png"
           alt="logo"
         />
-        <nav>
+        <nav class="navig">
           <ul class="ulNav">
             <li class="liNav">
               <a class="liNav liNavSelected" href="studio.html">Студія</a>
@@ -95,10 +95,12 @@
             <li class="liNav">
               <a class="liNav" href="portfolio.html">Портфоліо</a>
             </li>
-            <li class="liNav"><a href="#foot" class="contactsBtn">Контакти</a></li>
+            <li class="liNav">
+              <a href="#foot" class="contactsBtn">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <aside>
+        <aside class="connect">
           <ul class="ulContacts">
             <li>
               <a class="links" href="mailto:info@devstudio.com">
@@ -118,6 +120,45 @@
             </li>
           </ul>
         </aside>
+        <button class="burgerBtn">
+          <svg class="svgBurger">
+            <use href="./photos/studio/photosHeader/svgs/burger.svg"></use>
+          </svg>
+        </button>
+        <div class="burgerMenu">
+          <button class="closeBurgerBtn">
+            <svg class="closeBurger">
+              <use href="photos/modal/close.svg"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="menuNav">
+              <li><a class="linksPage studioBurger" href="index.html">Студія</a></li>
+              <li><a class="linksPage portfolioBurger" href="portfolio.html">Портфоліо</a></li>
+              <li><a class="linksPage contactsBurger" href="#foot">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contactsBurgerUl">
+            <li><a class="phoneNumberBurger" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="mailBurger" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="linksSocmediaBurger">
+            <li>
+              <a class="linksMediaBurger linksMediaBurger1" href="https://www.instagram.com/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="linksMediaBurger linksMediaBurger2" target="_blank" href="https://x.com/">Twitter</a>
+            </li>
+            <li>
+              <a class="linksMediaBurger linksMediaBurger3" target="_blank" href="https://www.facebook.com/?locale=uk_UA">Facebook</a>
+            </li>
+            <li>
+              <a class="linksMediaBurger lastMediaBurger" target="_blank" href="https://ua.linkedin.com/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </header>
     </div>
     <main>
@@ -525,8 +566,14 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li><a class="linksfooter sameHover" href="">info@devstudio.com</a></li>
-                <li><a class="linksfooter sameHover" href="">+38 096 111 11 11</a></li>
+                <li>
+                  <a class="linksfooter sameHover" href=""
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="linksfooter sameHover" href="">+38 096 111 11 11</a>
+                </li>
               </ul>
             </div>
             <div class="sec2Foot">

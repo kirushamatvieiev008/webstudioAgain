@@ -124,3 +124,25 @@ formModal.addEventListener("submit", (event) => {
     
 //   })
 // })
+
+const closeBurgerBtn = document.querySelector('.closeBurgerBtn');
+const burgerBtnOpen = document.querySelector('.burgerBtn');
+const burgerMenu = document.querySelector('.burgerMenu');
+const contactsBurger = document.querySelector('.contactsBurger');
+const studioBurger = document.querySelector('.studioBurger');
+
+burgerBtnOpen.addEventListener('click', event => {
+  burgerMenu.style.display = 'block';
+});
+
+closeBurgerBtn.addEventListener('click', event => {
+    burgerMenu.style.display = 'none';
+});
+
+contactsBurger.addEventListener('click', event => {
+      burgerMenu.style.display = 'none';
+})
+
+studioBurger.addEventListener('click', event => {
+  burgerBtnOpen.style.display = 'block';
+})
