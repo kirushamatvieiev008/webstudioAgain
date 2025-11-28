@@ -15,11 +15,11 @@ const flexModal = document.querySelector(".flexModal");
 const stayComment = document.querySelector(".stayComment");
 const notificationbeware = document.querySelector(".notificationbeware");
 const lastCheck = document.querySelector(".lastCheck");
-const picturesProjectsUl = document.querySelector('.picturesProjects');
+const picturesProjectsUl = document.querySelector(".picturesProjects");
 
 console.log(inpsModal);
 
-openModal.addEventListener("click", event => {
+openModal.addEventListener("click", (event) => {
   blurBlock.style.display = "block";
   modalWindow.style.display = "block";
   document.body.style.overflow = "hidden";
@@ -58,8 +58,8 @@ closeModalBtn.addEventListener("click", (event) => {
   blurBlock.style.display = "none";
   modalWindow.style.display = "none";
   document.body.style.overflow = "visible";
-  notificationbeware.style.display = 'none';
-  lastCheck.style.display = 'none';
+  notificationbeware.style.display = "none";
+  lastCheck.style.display = "none";
 });
 
 // formModal.addEventListener("submit", (event) => {
@@ -108,10 +108,9 @@ formModal.addEventListener("submit", (event) => {
   }
 });
 
-
 // picturesProjectsUl.addEventListener('click', event => {
 //   if (event.target.classList.contains('liPictureProjects1')) {
-    
+
 //   }
 // });
 
@@ -121,28 +120,44 @@ formModal.addEventListener("submit", (event) => {
 //   btn.addEventListener('click', event => {
 //     event.preventDefault();
 
-    
 //   })
 // })
 
-const closeBurgerBtn = document.querySelector('.closeBurgerBtn');
-const burgerBtnOpen = document.querySelector('.burgerBtn');
-const burgerMenu = document.querySelector('.burgerMenu');
-const contactsBurger = document.querySelector('.contactsBurger');
-const studioBurger = document.querySelector('.studioBurger');
+const closeBurgerBtn = document.querySelector(".closeBurgerBtn");
+const burgerBtnOpen = document.querySelector(".burgerBtn");
+const burgerMenu = document.querySelector(".burgerMenu");
+const contactsBurger = document.querySelector(".contactsBurger");
+const studioBurger = document.querySelector(".studioBurger");
 
-burgerBtnOpen.addEventListener('click', event => {
-  burgerMenu.style.display = 'block';
+burgerBtnOpen.addEventListener("click", (event) => {
+  burgerMenu.style.display = "block";
 });
 
-closeBurgerBtn.addEventListener('click', event => {
-    burgerMenu.style.display = 'none';
+closeBurgerBtn.addEventListener("click", (event) => {
+  burgerMenu.style.display = "none";
 });
 
-contactsBurger.addEventListener('click', event => {
-      burgerMenu.style.display = 'none';
-})
+contactsBurger.addEventListener("click", (event) => {
+  burgerMenu.style.display = "none";
+});
 
-studioBurger.addEventListener('click', event => {
-  burgerBtnOpen.style.display = 'block';
+studioBurger.addEventListener("click", (event) => {
+  burgerBtnOpen.style.display = "block";
+});
+
+const entredWrong = document.querySelector(".entredWrong");
+const formFoot = document.querySelector(".formFoot");
+const emailFootInp = document.querySelector(".emailFootInp");
+
+formFoot.addEventListener('submit', event => {
+  event.preventDefault();
+  console.log(emailFootInp.value);
+  
+  
+  if (!emailFootInp.value.includes('@')) {
+    entredWrong.style.display = 'block';
+    
+  } else {
+        entredWrong.style.display = 'none';
+  }
 })

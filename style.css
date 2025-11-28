@@ -1409,6 +1409,18 @@ label {
     display: none;
 }
 
+.entredWrong {
+    font-size: 14px;
+    color: red;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+        display: none;
+}
+
 /* .cvgPaths {
     x: 50%;
     y: 50%;
@@ -1909,7 +1921,7 @@ label {
         width: 270px;
     }
 
-    .regularClUl  {
+    .regularClUl {
         width: 370px;
     }
 
@@ -1960,13 +1972,14 @@ label {
     .head {
         justify-content: space-between;
     }
+
     .sort {
         margin-top: 40px;
         justify-content: left;
         flex-wrap: wrap;
     }
 
-    .optionsView  {
+    .optionsView {
         white-space: nowrap;
     }
 }
@@ -1976,6 +1989,7 @@ label {
     .container {
         width: 330px;
     }
+
     h1 {
         width: 230px;
         font-size: 18px;
@@ -1988,6 +2002,7 @@ label {
     .HeaderContainer {
         width: 300px;
     }
+
     .regularClUl {
         width: 200px;
     }
