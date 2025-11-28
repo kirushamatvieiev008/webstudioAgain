@@ -18,8 +18,6 @@ const notificationbeware = document.querySelector(".notificationbeware");
 const lastCheck = document.querySelector(".lastCheck");
 const picturesProjectsUl = document.querySelector(".picturesProjects");
 
-console.log(inpsModal);
-
 openModal.addEventListener("click", (event) => {
   blurBlock.style.display = "block";
   modalWindow.style.display = "block";
@@ -34,7 +32,6 @@ const funcChangeColorsvg = (bluSvg) => {
 };
 
 modalWindow.addEventListener("click", (event) => {
-  console.log(event.target);
 
   if (event.target.classList[1] === "forjs1") {
     funcChangeColorsvg(svgName);
@@ -50,7 +47,6 @@ modalWindow.addEventListener("click", (event) => {
 });
 
 closeModalBtn.addEventListener("click", (event) => {
-  // event.preventDefault();
   blurBlock.style.display = "none";
   modalWindow.style.display = "none";
   document.body.style.overflow = "visible";
@@ -74,30 +70,11 @@ checkboxModal.addEventListener("click", (event) => {
     ) {
       notificationbeware.style.display = "block";
       checkboxModal.checked = false;
-      console.log("just not work");
     } else {
       notificationbeware.style.display = "none";
     }
   }
 });
-
-// formModal.addEventListener("submit", (event) => {
-//   // event.preventDefault();
-
-//   if (checkboxModal.checked === false) {
-//     lastCheck.style.display = "block";
-//   } else {
-//     modalWindow.style.display = "none";
-//     blurBlock.style.display = "none";
-//     document.body.style.overflow = "visible";
-//     // inpsModal.forEach((inp) => {
-//     //   // inp.value = "";
-//     // });
-//     // stayComment.value = "";
-//     lastCheck.style.display = "none";
-//     checkboxModal.checked = false;
-//   }
-// });
 
 formModal.addEventListener("submit", (event) => {
   if (checkboxModal.checked === false) {

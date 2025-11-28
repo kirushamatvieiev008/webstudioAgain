@@ -9,7 +9,6 @@ const funcCheck = (checkWord) => {
   let toInner = [];
   arrayLiscards.forEach((li) => {
     const spaceGap = li.split('<span class="types">');
-    // console.log(spaceGap);
     if (spaceGap[1] === `${checkWord}</span>\n            `) {
       toInner.push(li);
     }

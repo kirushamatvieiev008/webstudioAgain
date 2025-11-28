@@ -69,15 +69,11 @@ p {
 .container {
     width: 1170px;
     margin: 0 auto;
-    /* outline: solid red 1px; */
-    /* z-index: 3; */
 }
 
 .HeaderContainer {
     width: 1170px;
     margin: 0 auto;
-    /* outline: solid red 1px; */
-    /* z-index: 3; */
 }
 
 .head {
@@ -85,8 +81,6 @@ p {
     width: 100%;
     align-items: center;
     height: 80px;
-    /* background-color: aquamarine; */
-
 }
 
 .logoHeaderimg {
@@ -178,7 +172,6 @@ p {
     animation-duration: .1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    /* color: #2196F3; */
 }
 
 .backOfSolutions {
@@ -188,13 +181,11 @@ p {
     background-size: cover;
     background-position: center;
     height: 600px;
-    /* background-color: #212121; */
 }
 
 .blackBackground {
     background-color: #2f303a;
     opacity: .4;
-    /* z-index: ; */
     height: 100%;
 }
 
@@ -220,7 +211,6 @@ h1 {
     padding-bottom: 30px;
     text-align: center;
     width: 700px;
-    /* z-index:; */
 }
 
 .takeOrder {
@@ -249,8 +239,6 @@ h1 {
 
 @keyframes buttonOrderAnimation {
     0% {
-        /* color: #fff;
-    background-color: #2196F3; */
         width: 216px;
         height: 50px;
         box-shadow: 2px 2px 5px rgb(86, 130, 180);
@@ -280,7 +268,6 @@ h1 {
 }
 
 .benefitsList {
-    /* margin-top: 94px; */
     gap: 30px;
     margin: 94px auto;
 }
@@ -358,7 +345,6 @@ h1 {
 }
 
 .personInfo:hover {
-    /* box-shadow: 1px 1px 5px rgb(73, 73, 73); */
     animation-name: boxFocus;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -375,12 +361,7 @@ h1 {
     }
 }
 
-/* .socLinks:hover {
-
-} */
-
 .name {
-    /* text-align: center; */
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -411,7 +392,6 @@ h1 {
 
 .secFoot {
     background-color: #2F303A;
-    /* height: 252px; */
     height: 100%;
     padding-bottom: 74px;
 }
@@ -475,15 +455,9 @@ h1 {
     opacity: 1;
 }
 
-
-/* .liWithSvgs {
-    text-align: center;
-} */
-
 .benefitsSvgs {
     width: 270px;
     height: 120px;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     background-color: #F5F4FA;
@@ -492,69 +466,13 @@ h1 {
 }
 
 .cvgPaths {
-    /* text-align: center; */
     width: 7px;
 }
 
-/* regular */
-
-/* font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-
-/* medium */
-
-/*   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-
-/* bold */
-
-/* font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-
-
-/* black */
-/* 
-
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-     */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*                                            portfolio                           */
-
-
 
 .sort {
     gap: 8px;
-    /* margin: 0 auto; */
-    /* text-align: center; */
     justify-content: center;
     margin-top: 94px;
     margin-bottom: 34px;
@@ -562,7 +480,6 @@ h1 {
 
 .optionsView {
     height: 38px;
-    /* color: #F5F4FA; */
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -575,7 +492,6 @@ h1 {
     padding: 6px 25px;
     background-color: #F5F4FA;
     cursor: pointer;
-    /* box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253); */
 }
 
 .optionsView:hover {
@@ -647,12 +563,9 @@ h1 {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     background-color: #2195f3d5;
-    /* text-align: center; */
-    /* padding-top: 63px; */
     padding-left: 24px;
     padding-right: 24px;
     line-height: 28px;
-    /* letter-spacing: 3%; */
     white-space: pre-line;
     overflow: hidden;
 }
@@ -674,7 +587,6 @@ h1 {
         top: 294px;
         height: 0;
         overflow: hidden;
-        /* background-color: #2196F3; */
     }
 
     100% {
@@ -682,7 +594,6 @@ h1 {
         top: 0;
         height: 231px;
         animation-play-state: paused;
-        /* background-color: #2196F3; */
     }
 }
 
@@ -710,8 +621,6 @@ h1 {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: #757575;
-    /* padding-bottom: 300px; */
-    /* padding-bottom: 20px; */
 }
 
 .regularClientsCaptcher {
@@ -733,12 +642,6 @@ h1 {
     outline: solid 1px #AFB1B8;
     border-radius: 4px;
     cursor: pointer;
-    /* margin-right: 20px; */
-    /* position: relative; */
-    /* text-align: center; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .svgsClients path {
@@ -842,14 +745,11 @@ h1 {
 }
 
 .svgsContacts {
-    /* background-color: red; */
     color: #AFB1B8;
     border-radius: 50%;
 }
 
 .svgsContacts:hover {
-    /* background-color: #2196F3;
-    color: #fff; */
     animation-name: socialHover;
     animation-duration: .1s;
     animation-timing-function: ease-in;
@@ -907,11 +807,9 @@ h1 {
 .svgsContactsFoot {
     width: 44px;
     height: 44px;
-    /* color: #ffffff; */
     color: #ffffff;
     border-radius: 50%;
     background-color: #ffffff2a;
-    /* opacity: .1; */
 }
 
 .svgsContactsFoot use {
@@ -937,7 +835,6 @@ h1 {
 
     100% {
         background-color: #2196F3;
-        /* color: #fff; */
     }
 }
 
@@ -948,8 +845,6 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    /* width: 100%;
-    height: 200px; */
     background-color: #000000;
     z-index: 10;
     opacity: .2;
@@ -965,8 +860,6 @@ h1 {
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
-    /* box-shadow: 0, 1, 3, 0, rgb(0, 0, 0, .12);
-    box-shadow: 0, 1, 1, 0, rgb(0, 0, 0, .14); */
     box-shadow: 0 1px 1px rgb(0, 0, 0, .14);
     box-shadow: 0 2px 1px rgb(0, 0, 0, .2);
     z-index: 11;
@@ -1023,10 +916,6 @@ h1 {
     top: 8px;
 }
 
-/* .closeBtn:hover .svgModal {
-    color: #2196F3;
-} */
-
 .dropInfo {
     color: #212121;
     padding: 0;
@@ -1056,7 +945,6 @@ label {
 
 .formInfo {
     width: 448px;
-    /* outline: solid 1px red; */
     margin-left: 40px;
 }
 
@@ -1069,10 +957,6 @@ label {
     padding-left: 42px;
     outline: solid 1px #21212134;
 }
-
-/* .inpsModal:focus .svgName {
-    color: #2196F3;
-} */
 
 .stayInfo {
     color: #212121;
@@ -1105,13 +989,6 @@ label {
     color: #2196F3;
 }
 
-/* .inpsModal {
-    width: 448px;
-    height: 40px;
-    outline: solid 1px #21212134;
-    border-radius: 4px;
-} */
-
 .formModal {
     text-align: left;
     width: 448px;
@@ -1135,11 +1012,8 @@ label {
 }
 
 .stayComment {
-    /* min-height: 100px; */
     width: 430px;
     height: 106px;
-    /* height: fit-content; */
-    /* overflow: scroll; */
     border-radius: 4px;
     outline: solid 1px #21212134;
     border: none;
@@ -1210,32 +1084,25 @@ label {
     margin: 0;
     margin-right: 8.5px;
     display: none;
-    /* margin-top: ; */
-    /* margin-left: 52px; */
 }
 
 .checkLabel::before {
     content: '';
     position: absolute;
     left: -9px;
-
     height: 12px;
     width: 12px;
     outline: solid 2px #212121;
     border-radius: 2px;
-
 }
 
 .checkLabel::after {
     content: '';
     position: absolute;
     left: -9px;
-
     height: 12px;
     width: 12px;
     background-color: rgb(255, 255, 255);
-    /* border-radius: 2px; */
-
 }
 
 .checkboxModal:checked+.checkLabel::after {
@@ -1251,13 +1118,11 @@ label {
 .conditions {
     color: #2196F3;
     text-decoration: underline solid;
-    /* text-align: center; */
 }
 
 .submitBtn {
     width: 200px;
     height: 50px;
-    /* margin: 0 auto; */
     background-color: #2196F3;
     color: #fff;
     border: none;
@@ -1273,14 +1138,11 @@ label {
     margin-top: 30px;
     box-shadow: 0 4px 4px rgb(0, 0, 0, .15);
     cursor: pointer;
-    /* text-align: center; */
 }
 
 .notification {
     font-size: 12px;
     color: red;
-    /* padding-left: 0px; */
-    /* margin-left: px; */
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -1418,29 +1280,10 @@ label {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-        display: none;
+    display: none;
 }
 
-/* .cvgPaths {
-    x: 50%;
-    y: 50%;
-    transform: translate(-32.2px, -35px);
-} */
-
 .optionViewSelected {
-    /* height: 38px;
-    color: #fff;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    background-color: #2196F3;
-    border: none;
-    border-radius: 4px;
-    padding: 6px 25px;
-    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.253); */
     background-color: #2196F3;
     color: white;
 }
@@ -1449,82 +1292,6 @@ label {
     color: white;
     background-color: #2196F3;
 }
-
-
-/* .svgName use {
-    x: 0;
-    y: 0;
-} */
-
-/*  */
-
-/*  */
-
-/* .justDiv {
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-} */
-
-/* regular */
-
-/* font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100; */
-
-/* medium */
-
-/*   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-
-/* bold */
-
-/* font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "wdth" 100; */
-
-
-/* black */
-/* 
-
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-     */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1280px) {
     .ulNav {
@@ -1550,10 +1317,9 @@ label {
     }
 
     .backOfSolutions {
-        background-image: url(teamProject_2x.png);
+        background-image: url(photos/studio/effectiveBackground/teamProject_2x.png);
         height: 400px;
         background-size: cover;
-        /* background-size: 100% 100%; */
     }
 
     .employeeInfo {
@@ -1627,20 +1393,11 @@ label {
 
     .picturesProjects {
         justify-content: center;
-        /* text-align: left; */
     }
 
     .liPictureProjects9 {
         transform: translateX(-54%);
     }
-
-
-
-    /*     gap: 30px;
-    width: 700px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 94px auto; */
 }
 
 
@@ -1680,11 +1437,6 @@ label {
 
 }
 
-/* @media (max-width: 710px) {
-
-
-} */
-
 .closeBurger {
     width: 18px;
     height: 18px;
@@ -1703,14 +1455,9 @@ label {
 }
 
 .burgerMenu {
-    /* width: 100%;
-    height: 100vh; */
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    /* margin-left: 50%;
-    margin-top: 24%; */
-    /* transform: translate(-50%, -50%); */
     display: none;
     position: absolute;
     top: 0;
@@ -1949,7 +1696,6 @@ label {
 
     .HeaderContainer {
         width: 450px;
-        /* justify-content: space-between; */
     }
 
     .backOfSolutions {
