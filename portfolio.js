@@ -69,3 +69,22 @@ contactsBurger.addEventListener('click', event => {
 portfolioBurger.addEventListener('click', event => {
   burgerBtnOpen.style.display = 'block';
 });
+
+
+const formFoot = document.querySelector(".formFoot");
+const inpFoot = document.querySelector(".emailFootInp");
+const entredWrong = document.querySelector(".entredWrong");
+
+formFoot.addEventListener("submit", (event) => {
+  
+  if (
+    inpFoot.value.length < 6 ||
+    !inpFoot.value.includes("@") ||
+    !inpFoot.value.includes(".com")
+  ) {
+    event.preventDefault();
+    entredWrong.style.display = "block";
+  } else {
+    entredWrong.style.display = "none";
+  }
+});

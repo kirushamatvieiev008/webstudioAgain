@@ -1,5 +1,6 @@
 const inpsModal = Array.from(document.querySelectorAll(".inpsModal"));
-const svgsModal = document.querySelector(".svgsModal");
+const svgsModal = document.querySelectorAll(".svgsModal");
+const svgName = document.querySelector(".svgName");
 const svgEmail = document.querySelector(".svgEmail");
 const svgPhone = document.querySelector(".svgPhone");
 const forjs1 = document.querySelector(".forjs1");
@@ -25,103 +26,89 @@ openModal.addEventListener("click", (event) => {
   document.body.style.overflow = "hidden";
 });
 
-forjs1.addEventListener("focus", (event) => {
-  svgsModal.style.color = "#2196F3";
-  //   svgEmail.style.color = "#2196F3";
-});
+const funcChangeColorsvg = (bluSvg) => {
+  svgsModal.forEach((svg) => {
+    svg.style.color = "#212121";
+  });
+  bluSvg.style.color = "#2196F3";
+};
 
-forjs1.addEventListener("blur", (event) => {
-  svgsModal.style.color = "#212121";
-  //   svgPhone.style.color = "#212121";
-  //   svgEmail.style.color = "#212121";
-});
+modalWindow.addEventListener("click", (event) => {
+  console.log(event.target);
 
-forjs2.addEventListener("focus", (event) => {
-  svgPhone.style.color = "#2196F3";
-});
-
-forjs2.addEventListener("blur", (event) => {
-  svgPhone.style.color = "#212121";
-});
-
-forjs3.addEventListener("focus", (event) => {
-  svgEmail.style.color = "#2196F3";
-});
-
-forjs3.addEventListener("blur", (event) => {
-  svgEmail.style.color = "#212121";
+  if (event.target.classList[1] === "forjs1") {
+    funcChangeColorsvg(svgName);
+  } else if (event.target.classList[1] === "forjs2") {
+    funcChangeColorsvg(svgPhone);
+  } else if (event.target.classList[1] === "forjs3") {
+    funcChangeColorsvg(svgEmail);
+  } else {
+    svgsModal.forEach((svg) => {
+      svg.style.color = "#212121";
+    });
+  }
 });
 
 closeModalBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  // closeModalBtn.style.dislay = 'none';
+  // event.preventDefault();
   blurBlock.style.display = "none";
   modalWindow.style.display = "none";
   document.body.style.overflow = "visible";
   notificationbeware.style.display = "none";
   lastCheck.style.display = "none";
+  inpsModal.forEach((inp) => {
+    inp.value = "";
+  });
+  stayComment.value = "";
 });
-
-// formModal.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   // console.log(forjs3.value);
-
-//   // if ()
-//   modalWindow.style.display = "none";
-//   blurBlock.style.display = "none";
-//   document.body.style.overflow = "visible";
-// });
 
 checkboxModal.addEventListener("click", (event) => {
   if (checkboxModal.checked === true) {
-    // const flexModalContent = flexModal.innerHTML;
     if (
       forjs3.value === "" ||
-      forjs2.value === "" ||
+      !forjs3.value.includes === "@" ||
+      !forjs3.value.includes === ".com" ||
+      forjs2.value.length < 10 ||
       forjs1.value === "" ||
       stayComment.value === ""
     ) {
       notificationbeware.style.display = "block";
       checkboxModal.checked = false;
+      console.log("just not work");
     } else {
       notificationbeware.style.display = "none";
     }
   }
 });
 
-formModal.addEventListener("submit", (event) => {
-  event.preventDefault();
-  // console.log(forjs3.value);
+// formModal.addEventListener("submit", (event) => {
+//   // event.preventDefault();
 
+//   if (checkboxModal.checked === false) {
+//     lastCheck.style.display = "block";
+//   } else {
+//     modalWindow.style.display = "none";
+//     blurBlock.style.display = "none";
+//     document.body.style.overflow = "visible";
+//     // inpsModal.forEach((inp) => {
+//     //   // inp.value = "";
+//     // });
+//     // stayComment.value = "";
+//     lastCheck.style.display = "none";
+//     checkboxModal.checked = false;
+//   }
+// });
+
+formModal.addEventListener("submit", (event) => {
   if (checkboxModal.checked === false) {
     lastCheck.style.display = "block";
+    event.preventDefault();
   } else {
     modalWindow.style.display = "none";
     blurBlock.style.display = "none";
     document.body.style.overflow = "visible";
-    inpsModal.forEach((inp) => {
-      inp.value = "";
-    });
-    stayComment.value = "";
-    lastCheck.style.display = "none";
-    checkboxModal.checked = false;
   }
 });
-
-// picturesProjectsUl.addEventListener('click', event => {
-//   if (event.target.classList.contains('liPictureProjects1')) {
-
-//   }
-// });
-
-// const optionsView = document.querySelectorAll('.optionsView');
-
-// optionsView.forEach(btn => {
-//   btn.addEventListener('click', event => {
-//     event.preventDefault();
-
-//   })
-// })
 
 const closeBurgerBtn = document.querySelector(".closeBurgerBtn");
 const burgerBtnOpen = document.querySelector(".burgerBtn");
@@ -131,10 +118,12 @@ const studioBurger = document.querySelector(".studioBurger");
 
 burgerBtnOpen.addEventListener("click", (event) => {
   burgerMenu.style.display = "block";
+  document.body.style.overflow = "hidden";
 });
 
 closeBurgerBtn.addEventListener("click", (event) => {
   burgerMenu.style.display = "none";
+  document.body.style.overflow = "visible";
 });
 
 contactsBurger.addEventListener("click", (event) => {
@@ -145,19 +134,19 @@ studioBurger.addEventListener("click", (event) => {
   burgerBtnOpen.style.display = "block";
 });
 
-const entredWrong = document.querySelector(".entredWrong");
 const formFoot = document.querySelector(".formFoot");
-const emailFootInp = document.querySelector(".emailFootInp");
+const inpFoot = document.querySelector(".emailFootInp");
+const entredWrong = document.querySelector(".entredWrong");
 
-formFoot.addEventListener('submit', event => {
-  event.preventDefault();
-  console.log(emailFootInp.value);
-  
-  
-  if (!emailFootInp.value.includes('@')) {
-    entredWrong.style.display = 'block';
-    
+formFoot.addEventListener("submit", (event) => {
+  if (
+    inpFoot.value.length < 6 ||
+    !inpFoot.value.includes("@") ||
+    !inpFoot.value.includes(".com")
+  ) {
+    event.preventDefault();
+    entredWrong.style.display = "block";
   } else {
-        entredWrong.style.display = 'none';
+    entredWrong.style.display = "none";
   }
-})
+});
